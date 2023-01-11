@@ -1,0 +1,262 @@
+
+@font-face {
+    font-family:Playfair Display;
+    src: url(./fonts/PlayfairDisplay-Regular.ttf);
+}
+    
+    .fondoLogo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #FBFFFF;
+}
+
+.fondoLogo img{
+    width: 50%;
+    height: 50%;
+    margin-top: 25%;
+    margin-left: 30%;
+    margin-right: 30%;
+}
+
+.contenedorLogo{
+    justify-content: center;
+    display: flex;
+}
+
+.seleccionDePerfil{
+    position: relative;
+
+}
+
+.fondo{
+    background-color: #E5EFF7;
+    background-image:  radial-gradient(#7dbaff5e 2px, transparent 2px), radial-gradient(#7dbaff00 2px, #e5eff7 2px);
+    background-size: 80px 80px;
+    background-position: 0 0,40px 40px;
+}
+
+.bienvenidaYlogo{
+justify-content: center;
+margin-left: 0%;
+margin-top: 8%;
+}
+
+.bienvenida{
+font-family: Playfair Display;
+font-weight: 700;
+font-size: 150%;
+line-height: 23px;
+text-align: center;
+text-transform: uppercase;
+color: #7DB9FF;
+margin-bottom: 3%;
+}
+
+.botonesYtexto{
+    
+    font-size: 20px;
+    line-height: 23px;
+    color: #01CDBB;
+    
+    }
+
+
+.botones{
+margin:auto;
+flex-direction:row;
+justify-content: center;
+display:flex;
+height: 10%;
+width: 10%;
+text-decoration: none;
+border: 1px solid #ffffff34;
+}
+
+#botonmp {
+text-decoration: none;
+border: 1px solid #ffffff00;
+}
+
+
+.botonPaciente:hover {
+    cursor: pointer;
+    background: #7DB9FF;
+    color: #FBFFFF;
+}
+
+.botonProfesional:hover {
+    cursor: pointer;
+    background: #7DB9FF;
+    color: #FBFFFF;
+}
+
+.textoComoIngresar{
+    font-family: Playfair Display;
+    margin-top: 2%;
+    justify-content: center;
+    display: flex;
+}
+
+.botonPaciente{
+padding: 1rem;
+display: flex;
+justify-content: center;
+align-items: center;
+text-align: center;
+background: #7DB9FF;
+border-radius: 4px;
+width: 15rem;
+height: 1rem;
+
+font-style: normal;
+font-weight: 500;
+
+
+color: #FBFFFF;
+}
+
+.botonProfesional{
+
+
+display: flex;
+justify-content: center;
+align-items: center;
+text-align: center;
+background: #01CDBB;
+border-radius: 4px;
+    
+
+font-style: normal;
+font-weight: 500;
+
+
+color: #FBFFFF;
+
+}
+
+.botonPaciente, .botonProfesional{
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin: 1rem;
+  font-family: Playfair Display;
+  font-size: 1.5rem;
+  padding-left: .5rem;
+  padding-right: .5rem;
+  cursor: pointer;
+  outline: none;
+  box-shadow: 0 4px #999;
+}
+
+.botonProfesional:hover{
+    background-color:#04a699;
+}
+.botonProfesional:active{
+    background-color: #05b8a9;
+    box-shadow: 0 5px #666;
+    transform: translateY(4px);
+}
+
+.botonPaciente:hover{
+    background-color:#4f97e9;
+}
+.botonPaciente:active{
+    background-color: #2789f8;
+    box-shadow: 0 5px #666;
+    transform: translateY(4px);
+}
+
+.logoSeleccion{
+    margin: 0px auto;
+    display: flex;
+    width: 15%;
+    height: 20%;
+    top: 5%;
+    left: 5%;
+}
+
+/*movil pequeno*/
+@media (min-width: 360px) and (max-width: 390px){
+    .seleccionDePerfil{
+        justify-content: center;
+        align-items: center;
+        margin: 0;
+        padding: 0;
+    }
+    .textoComoIngresar{
+        font-size: 1.5rem;
+    }
+    .logoSeleccion{
+        width: 15rem;
+    }
+    .bienvenida p{
+        text-align: center;
+        font-size: 2rem;
+        margin-bottom: 3rem;
+    }
+    .botonProfesional, .botonPaciente{
+        padding: 1rem;
+        width: 15rem;
+        height: 3rem;
+        margin: .5rem;
+        margin-top: 1rem;
+        font-size: 1em;
+    }
+
+    .fondo{
+    
+        margin: 0;
+        padding: 0;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        display: flex;
+        margin-top: 4rem;
+    }
+   
+}
+
+/*movil mediano*/
+@media (min-width: 390px) and (max-width: 700px){
+    .textoComoIngresar{
+        margin-top: 2rem;
+        font-size: 1.5rem;
+        margin-top: 5rem;
+    }
+    .logoSeleccion{
+        margin-top: 4rem;
+        width: 15rem;
+    }
+    .bienvenida p{
+        text-align: center;
+        font-size: 2rem;
+        margin-bottom: 5rem;
+        
+    }
+    .botonProfesional, .botonPaciente{
+        padding: 1.5rem;
+        width: 10rem;
+        height: 3rem;
+        margin: .5rem;
+        margin-top: 2rem;
+        font-size: 1.5rem;
+    }
+    .fondo{
+        margin: 0;
+        padding: 0;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        display: flex;
+        margin-top: 2rem;
+        margin-bottom: 3rem;
+
+    }
+    
+}
+
+
+
+
+
